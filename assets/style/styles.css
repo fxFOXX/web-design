@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #121212;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00d1b2;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d1b2;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    background-color: #1b1b1b;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 20px;
+    text-align: left;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+.hero-content .highlight {
+    color: #00d1b2;
+}
+
+.hero-content p {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #aaa;
+}
+
+.hero-image {
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img {
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 209, 178, 0.5);
+    max-width: 100%;
+    filter: brightness(70%);
+}
+
+ .service-icon img {
+        width: 50px;
+        height: auto;
+        /* Maintains the aspect ratio */
+    }
+
+    .feature-item {
+        text-align: center;
+        /* Center align the content */
+        margin-bottom: 2px;
+        /* Add space between feature items */
+    }
+
+    .icon img {
+        width: 50px;
+        /* Set the icon width */
+        height: 50px;
+        /* Set the icon height */
+        margin-bottom: 20px;
+        /* Reduced space between icon and heading */
+        object-fit: contain;
+        /* Ensure the image maintains aspect ratio */
+    }
+
+    .text h4 {
+        margin: 0;
+        /* Remove default margin from heading */
+        text-align: center;
+        /* Center align the heading */
+    }
+
+    .text p {
+        margin: 5px 0 0 0;
+        /* Adjust margin for paragraph */
+        text-align: justify;
+        /* Justify the paragraph text */
+        word-wrap: break-word;
+        /* Ensures text wraps within the container */
+    }
+
+
+    .stats-footer .icon svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor; /* Ensures the icon color matches the text color */
+}
+
+.stats-footer .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+.stats-footer {
+    background-color: #000;
+    color: #00d4ff;
+    padding: 20px 50px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px; /* Adjust height as necessary */
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px; /* Space between icons and footer text */
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px; /* Add space between the stat items */
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.text {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.value {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.credits {
+    font-size: 12px;
+    color: #00d4ff;
+    margin-top: auto; /* Pushes the credit text to the bottom */
+    text-align: center;
+}
+
+
+  .about-us {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0 400px; /* Reduce the top padding */
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+}
+
+
+    .image-container {
+        flex: 1;
+        max-width: 50%;
+        /* Restricts the image container to half the width */
+    }
+
+    .image-container img {
+        width: 100%;
+        /* Ensures the image takes up the full width of its container */
+        height: auto;
+        /* Maintains the aspect ratio of the image */
+        object-fit: cover;
+        filter: blur(8px);
+        opacity: 0.5;
+    }
+
+.content {
+    flex: 1;
+    max-width: 30%;
+    padding-left: -400px; /* Moves the text to the left by 5% of the container width */
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+
+    h3 {
+        color: #00d4ff;
+        font-size: 18px;
+        letter-spacing: 2px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    h1 span {
+        color: #00d4ff;
+    }
+
+    p {
+        font-size: 16px;
+        margin-bottom: 30px;
+        line-height: 1.6;
+        text-align: justify;
+        /* Ensures paragraph text is justified */
+    }
+
+    .features {
+        display: flex;
+        gap: 40px;
+    }
+
+    .feature-item {
+        display: flex;
+        align-items: center;
+    }
+
+    .icon {
+        font-size: 40px;
+        margin-right: 15px;
+        color: #00d4ff;
+    }
+
+    .text h4 {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+
+    .text p {
+        font-size: 14px;
+        color: #ccc;
+        text-align: justify;
+        /* Justify text in features */
+    }
+        /* Centering the .services section */
+    .services-wrapper {
+        display: flex;
+        justify-content: center;
+        /* Center the .services section horizontally */
+    }
+
+    .services {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 50px;
+        background-color: #121212;
+        color: #fff;
+        width: 100%;
+        max-width: 1200px;
+        margin-top: 20px;
+    }
+
+    .services-content {
+        max-width: 50%;
+        text-align: left;
+        /* Align text to the left */
+    }
+
+    .services-content h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .services-content .highlight {
+        color: #00d1b2;
+    }
+
+    .services-content p {
+        margin-bottom: 20px;
+        font-size: 16px;
+        color: #aaa;
+        text-align: justify;
+        /* Justify text */
+    }
+
+    .services-content .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #00d1b2;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s;
+    }
+
+    .services-content .btn:hover {
+        background-color: #00a58e;
+    }
+
+    .services-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        max-width: 45%;
+    }
+
+    .service-item {
+        background-color: #1b1b1b;
+        padding: 20px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 45%;
+        text-align: center;
+    }
+
+    .service-icon {
+        font-size: 36px;
+        color: #00d1b2;
+        margin-bottom: 10px;
+    }
+
+    .service-item h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+
+    .service-item p {
+        font-size: 14px;
+        color: #aaa;
+    }

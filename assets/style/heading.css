@@ -1,0 +1,112 @@
+/* Heading Styles */
+h3 {
+    color: #00d4ff;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+h1 span {
+    color: #00d4ff;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    text-align: justify;
+    color: #fff;
+    /* Ensure text color is white */
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    gap: 40px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    /* border-radius: 12px; */
+    /* Removed rounded corners for feature items */
+    padding: 10px;
+    background: #000;
+    /* Background color to match dark theme */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5), inset 4px 4px 8px rgba(255, 255, 255, 0.2);
+    /* Neumorphism effect with no top or left shadow */
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .about-us {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        height: auto;
+        /* Allow height to adjust based on content */
+    }
+
+    .image-container {
+        max-width: 100%;
+        /* Ensure image container does not exceed screen width */
+        margin-bottom: 20px;
+        /* Space below image container */
+    }
+
+    .content {
+        max-width: 100%;
+        /* Ensure content does not exceed screen width */
+        padding: 0;
+        /* Remove extra padding for mobile */
+        text-align: center;
+        /* Center-align text for better readability */
+    }
+
+    h1 {
+        font-size: 36px;
+        /* Larger heading for visibility */
+    }
+
+    p {
+        font-size: 14px;
+        /* Smaller paragraph text for mobile */
+        text-align: center;
+        /* Center-align text for consistency */
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        /* Space between feature items */
+    }
+
+    .feature-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* Center-align feature items */
+    }
+
+    .icon img {
+        max-width: 30px;
+        /* Adjust icon size for mobile */
+    }
+
+    .text h4 {
+        font-size: 18px;
+        /* Adjust heading size within feature items */
+    }
+
+    .text p {
+        font-size: 12px;
+        /* Adjust paragraph text size within feature items */
+    }
+}

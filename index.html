@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CYBERTRON - Creative Designers</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+<link rel="stylesheet" href="assets/style/ballanim.css">
+<link rel="stylesheet" href="assets/style/contact.css">
+<link rel="stylesheet" href="assets/style/slide.css">
+<link rel="stylesheet" href="assets/style/header.css">
+<link rel="stylesheet" href="assets/style/serve.css">
+<link rel="stylesheet" href="assets/style/heading.css">
+<link rel="stylesheet" href="assets/style/about.css">
+<link rel="stylesheet" href="assets/style/hero.css">
+
+</head>
+
+<body>
+
+    <div class="ball ball1"></div>
+    <div class="ball ball2"></div>
+
+    <script>
+ 
+    </script>
+<div class="header-hero-wrapper">
+<header>
+    <div class="logo">CYBERTRON</div>
+<nav style="size: 20px;" class="desktop-nav">
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#designs">Designs</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+
+    </ul>
+</nav>
+
+
+
+
+
+
+    <!-- Mobile Hamburger -->
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+    <!-- Mobile Navigation -->
+    <nav id="mobile-nav">
+        <div class="close-btn" onclick="toggleMenu()">✖</div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#designs">Designs</a></li>
+            <li><a href="#service">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+           
+        </ul>
+    </nav>
+</header>
+
+<style>
+
+
+</style>
+<a href="#" id="scrollToTop" class="scroll-to-top">
+    &#8593;
+</a>
+
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>WE ARE <span class="highlight">CREATIVE</span> DESIGNERS</h1>
+            <h4>Crafting Unique and Impactful Designs That Elevate Your Brand and Engage Your Audience</h4>
+            <p>At CYBERTRON, we specialize in transforming your vision into stunning visual experiences. From branding and
+            web design to multimedia projects, our innovative approach ensures your mes</p>
+        </div>
+        <div class="hero-image">
+            <img src="assets/img/qw.webp" alt="Creative Designer">
+        </div>
+    </section>
+</div>
+
+
+
+<div id="designs" class="slideshow-container">
+    <h5 style="color: #00D4FF;">Designs</h5>
+    <h3 class="slideshow-heading">DESIGNS</h3>
+    <p class="slideshow-description">Explore our diverse range of designs that showcase our creativity and expertise.
+        From stunning visuals to innovative solutions, we offer a variety of design options to suit your needs. Browse
+        through the images to get inspired and see how we can bring your ideas to life.</p>
+    <div class="slideshow-wrapper">
+        <div class="slideshow-slide">
+            <img src="assets/designs/1.png" alt="Portfolio" onclick="openModal(this)">
+        </div>
+        <div class="slideshow-slide">
+            <img src="assets/designs/2.png" alt="Real estate Website" onclick="openModal(this)">
+        </div>
+        <div class="slideshow-slide">
+            <img src="assets/designs/3.png" alt="Photographer Website" onclick="openModal(this)">
+        </div>
+        <div class="slideshow-slide">
+            <img src="assets/designs/4.png" alt="Gym website" onclick="openModal(this)">
+        </div>
+        <div class="slideshow-slide">
+            <img src="assets/designs/5.png" alt="Workout" onclick="openModal(this)">
+        </div>
+        <div class="slideshow-slide">
+            <img src="assets/designs/6.png" alt="Gym" onclick="openModal(this)">
+        </div>
+    </div>
+    <!-- Navigation Arrows -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</div>
+
+<!-- Modal for viewing images -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img class="modal-content" id="modalImage">
+    <div id="caption"></div>
+</div>
+
+
+<section id="service" class="services">
+    <div class="services-content">
+        <h5 style="color: #00D4FF;">Services</h5>
+        <h2>WHAT WE <span class="highlight">DO?</span></h2>
+        <p>We specialize in delivering top-notch digital solutions, including custom website design, mobile and desktop app
+        development, and UI & UX design. Our team creates engaging and user-friendly websites, develops robust applications, and
+        enhances user experiences with innovative design strategies. Additionally, we offer professional photo editing services
+        to perfect your visual content. From concept to execution, we provide tailored solutions that drive growth and success
+        for your business.</p>
+        <a href="#" class="btn">VIEW ALL</a>
+    </div>
+    <div class="services-grid">
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="assets/service/web.png" alt="Website Design Icon">
+            </div>
+            <h3>Website Design</h3>
+            <p>We specialize in creating visually stunning and highly functional websites tailored to your business needs.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="assets/service/mobile.png" alt="Mobile App Icon">
+            </div>
+            <h3>Mobile & Desktop App</h3>
+            <p>We develop robust mobile and desktop applications tailored to your business requirements.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="assets/service/ui.png" alt="UI & UX Design Icon">
+            </div>
+            <h3>UI & UX Design</h3>
+            <p>Our UI and UX design services focus on creating engaging and intuitive experiences for both mobile and desktop
+            applications.</p>
+        </div>
+        <div class="service-item">
+            <div class="service-icon">
+                <img src="assets/service/editing.png" alt="Photo Editing Icon">
+            </div>
+            <h3>Editing Photo</h3>
+            <p>We offer professional photo editing services to enhance the quality and appeal of your images.</p>
+        </div>
+    </div>
+</section>
+
+
+
+<section id="about" class="about-us">
+    <div class="image-container">
+        <img src="assets/img/Design.jpg" alt="About Us Background Image">
+    </div>
+    <div class="content">
+        <h5 style="color: #00D4FF;">About us</h5>
+        <h1>WHO ARE <span>WE?</span></h1>
+        <p>We are a passionate team of digital innovators dedicated to delivering exceptional solutions in website
+            design, mobile and desktop app development, UI & UX design, and photo editing. Our mission is to transform
+            your ideas into impactful, user-friendly digital experiences that drive success and growth for your
+            business.</p>
+        <div class="features">
+            <div class="feature-item">
+                <div class="icon">
+                    <img src="assets/about/clean.png" alt="Clean Code Icon">
+                </div>
+                <div class="text">
+                    <h4>Clean Code</h4>
+                    <p>We write clean, maintainable code that ensures your applications are robust and scalable.</p>
+                </div>
+            </div>
+            <div class="feature-item">
+                <div class="icon">
+                    <img src="assets/about/web.png" alt="Modern Design Icon">
+                </div>
+                <div class="text">
+                    <h4>Modern Design</h4>
+                    <p>Our designs are contemporary and visually striking, tailored to enhance your brand's identity and
+                        user engagement.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<p>
+
+</p>
+
+    <section id="contact" class="contact-us">
+        <div class="container">
+            <div class="contact-header">
+                <h5 style="color: #00D4FF;">Contact</h5>
+                <h1>CONTACT US</h1>
+            </div>
+            <div class="contact-content">
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3670.6722495011915!2d28.74125651487783!3d-33.02054859802227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e6d0eec7f74c4db%3A0x8e46b041f5a2a732!2s1%20Amatola%20Row%2C%20King%20Williams%20Town%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1669871770434!5m2!1sen!2sza"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="icon">
+                            <img src="assets/icons/address-icon.png" alt="Address Icon">
+                        </div>
+                        <div class="details">
+                            <h3>Address</h3>
+                            <p>1 Amatola row, KWT, 5601</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <img src="assets/icons/phone-icon.png" alt="Phone Icon">
+                        </div>
+                        <div class="details">
+                            <h3>Call Us</h3>
+                            <p>+27 712 345 677</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="icon">
+                            <img src="assets/icons/email-icon.png" alt="Email Icon">
+                        </div>
+                        <div class="details">
+                            <h3>Email Us</h3>
+                            <p>dev@cybertron.co.za</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form action="form.php" method="post" class="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+
+                give php for this form 
+            </div>
+        </div>
+    </section>
+
+
+<p>
+
+</p>
+<footer id="stats-footer" class="stats-footer">
+    <b class="credits">
+        <h5>ACHIVEMENTS</h5>
+    </b>
+    <p>
+
+    </p>
+
+
+    </div>
+    <div class="stats">
+        <div class="stat-item">
+            <div class="icon">
+                <img src="assets/footer/project.png" alt="Project Icon" width="24" height="24">
+            </div>
+            <div class="text" style="color: #ffffff;">PROJECT</div>
+            <div id="projects" class="value" style="color: #ffffff;">300+</div>
+        </div>
+        <div class="stat-item">
+            <div class="icon">
+                <img src="assets/footer/pleasure.png" alt="Chart Icon" width="24" height="24">
+            </div>
+            <div class="text" style="color: #ffffff;">PLEASURE</div>
+            <div id="pleasure" class="value" style="color: #fff;">8.9</div>
+        </div>
+        <div class="stat-item">
+            <div class="icon">
+                <img src="assets/footer/customer.png" alt="Customer Icon" width="24" height="24">
+            </div>
+            <div class="text" style="color: #ffffff;">CUSTOMER</div>
+            <div id="customers" class="value" style="color: #ffffff;">3000+</div>
+        </div>
+        <div class="stat-item">
+            <div class="icon">
+                <img src="assets/footer/team.png" alt="Team Members Icon" width="24" height="24">
+            </div>
+            <div class="text" style="color: #ffffff;">TEAM MEMBERS</div>
+            <div id="team-members" class="value" style="color: #ffffff;">23</div>
+        </div>
+    </div>
+    
+    <a href="#" id="scrollToTop" class="scroll-to-top">
+        &#8593;
+    </a>
+
+<p>
+
+</p>
+
+
+</footer>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="social-icons">
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.x.com"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.google.com"><i class="fab fa-google-plus-g"></i></a>
+            <a href="https://www.youtube.com"><i class="fab fa-youtube"></i></a>
+        </div>
+        <nav class="footer-nav">
+            <a href="#hero">Home</a>
+            <a href="#designs">Designs</a>
+            <a href="#service">Services</a>
+            <a href="#about">About us</a>
+            <a href="#contact">Contact us</a>
+        </nav>
+<p class="footer-credit">Cybertron All rights reserved ©2022; Designed by AppHatch</p>
+        <a href="#" class="scroll-to-top"><i class="fas fa-arrow-up"></i></a>
+    </div>
+</footer>
+
+<script src="assets/javascript/script.js"></script>
+</body>
+
+</html>

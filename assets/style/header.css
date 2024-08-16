@@ -1,0 +1,112 @@
+/* Basic Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Desktop Navigation */
+.desktop-nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.desktop-nav ul li {
+    margin: 0 10px;
+}
+
+.desktop-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    /* Space for the border */
+}
+
+/* Mobile Styles */
+.hamburger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Mobile Navigation */
+nav#mobile-nav {
+    position: fixed;
+    top: 20px;
+    right: -100%;
+    width: 250px;
+    height: 50%;
+    /* Reduced height */
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding-top: 20px;
+}
+
+nav#mobile-nav .close-btn {
+    text-align: right;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+nav#mobile-nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav#mobile-nav ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+nav#mobile-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding-bottom: 5px;
+    /* Space for the border */
+}
+
+/* Hover Effects */
+nav#mobile-nav ul li a:hover {
+    border-bottom: 2px solid #00D1B2;
+    transition: border-color 0.3s ease;
+}
+
+.desktop-nav ul li a:hover {
+    border-bottom: 2px solid #00D1B2;
+    transition: border-color 0.3s ease;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+nav#mobile-nav.show {
+    right: 20px;
+}

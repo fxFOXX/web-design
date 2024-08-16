@@ -1,0 +1,66 @@
+/* About Us Section */
+.about-us {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    color: #fff;
+    width: 100%;
+    max-width: 1200px;
+    background: rgba(0, 0, 0, 0.5);
+    /* Black with glassmorphism */
+
+    backdrop-filter: blur(10px);
+}
+
+.image-container {
+    flex: 1;
+    max-width: 50%;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 12px; */
+    /* Removed rounded corners for the image container */
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    filter: blur(8px);
+    transition: filter 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    animation: blurBlink 2s infinite alternate;
+}
+
+@keyframes blurBlink {
+    0% {
+        filter: blur(8px);
+        opacity: 0.7;
+    }
+
+    50% {
+        filter: blur(0);
+        opacity: 1;
+    }
+
+    100% {
+        filter: blur(8px);
+        opacity: 0.7;
+    }
+}
+
+.content {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+    /* Added padding for better spacing */
+    text-align: left;
+    white-space: normal;
+    word-wrap: break-word;
+    /* border-radius: 12px; */
+    /* Removed rounded corners for content */
+    background: #000;
+    /* Background color to maintain dark theme */
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5), inset 4px 4px 8px rgba(255, 255, 255, 0.2);
+    /* Neumorphism effect */
+}

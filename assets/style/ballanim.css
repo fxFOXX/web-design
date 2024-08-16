@@ -1,0 +1,94 @@
+  /* Ball Animation */
+  @keyframes moveBall {
+      0% {
+          transform: translateX(0) translateY(0) rotate(0deg);
+      }
+
+      50% {
+          transform: translateX(50px) translateY(100px) rotate(180deg);
+      }
+
+      100% {
+          transform: translateX(0) translateY(0) rotate(360deg);
+      }
+  }
+
+  .background-ball {
+      position: absolute;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 255, 255, 0.8), rgba(0, 0, 255, 0.8));
+      box-shadow: 0 0 20px 10px rgba(0, 0, 255, 0.5), 0 0 30px 15px rgba(255, 255, 255, 0.3);
+      animation: moveBall 10s infinite ease-in-out;
+      z-index: -1;
+  }
+
+  .ball1 {
+      width: 150px;
+      height: 150px;
+      top: 10%;
+      left: 20%;
+  }
+
+  .ball2 {
+      width: 200px;
+      height: 200px;
+      top: 70%;
+      left: 70%;
+  }
+
+  /* Existing styles */
+  .service-icon img {
+      width: 50px;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+  }
+
+  .feature-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 2px;
+      padding: 20px;
+      border-radius: 15px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .icon img {
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+      object-fit: contain;
+      transition: transform 0.5s ease-in-out;
+  }
+
+  .icon img:hover {
+      transform: scale(1.1) rotate(3deg);
+      animation: wave 0.6s ease-in-out infinite;
+  }
+
+  @keyframes wave {
+
+      0%,
+      100% {
+          transform: scale(1.1) rotate(3deg) translateX(0);
+      }
+
+      50% {
+          transform: scale(1.1) rotate(3deg) translateX(5px);
+      }
+  }
+
+  .text h4 {
+      margin: 0;
+      text-align: left;
+  }
+
+  .text p {
+      margin: 5px 0 0 0;
+      text-align: justify;
+      word-wrap: break-word;
+  }

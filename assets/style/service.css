@@ -1,0 +1,110 @@
+.services-section {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 20%;
+
+    color: #fff;
+    gap: 30px;
+    transform: translate(-3%, 3%);
+    box-sizing: border-box;
+}
+
+.services-intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-header {
+    color: #1ABC9C;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.services-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.services-text {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.view-all-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #1ABC9C;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.view-all-btn:hover {
+    background-color: #16A085;
+}
+
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-items: center;
+    align-items: start;
+}
+
+.service-item {
+    background: #2c2c2c;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 350px;
+    box-sizing: border-box;
+}
+
+.service-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 15px;
+}
+
+.service-item h3 {
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.service-item p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #bdbdbd;
+}
+
+.service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+    .services-section {
+        flex-direction: row;
+        padding: 60px 80px;
+    }
+
+    .services-intro {
+        flex: 1;
+        max-width: 50%;
+        text-align: left;
+    }
+
+    .services-list {
+        flex: 1;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+}
